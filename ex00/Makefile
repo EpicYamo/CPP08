@@ -10,7 +10,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CPP) $(CPPFLAGS) -o $(NAME) $(OBJS)
 
-%.o: %.cpp
+%.o: %.cpp easyfind.hpp
 	$(CPP) $(CPPFLAGS) -c $< -o $@
 
 clean:
